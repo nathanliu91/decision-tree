@@ -1,0 +1,55 @@
+/* This needs to be responsive for different screen sizes (e.g. mobile)
+The best practices include different styles given different screen widths. Would stack boxes on top of each other, etc.
+ */
+.container{
+    width:80%;
+    margin:auto;
+}
+.header{
+    font-family: Montserrat;
+}
+
+.text{
+    font: normal 16px Lato,Arial;
+    line-height:1.6em;
+    padding: auto;
+    margin: auto;
+
+}
+
+.footer{
+    font-family: Montserrat;
+}
+
+.myform{
+    padding:0;
+}
+
+.my-form .form-group{
+    padding-bottom:15px;
+}
+
+.my-form label{
+    display:block;
+}
+
+.my-form input[type="text"], .my-form textarea{
+    padding:8px;
+    width:100%;
+}
+
+.button{
+    background-color:#333;
+    color:#fff;
+    padding:10px 15px;
+    border:none;
+}
+
+.button:hover{
+    background:red;
+    color:#fff;
+}
+
+.mytextarea{
+    font-family: Montserrat;
+}
