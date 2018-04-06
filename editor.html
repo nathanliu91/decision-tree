@@ -1,0 +1,39 @@
+<!doctype html>
+
+<html>
+	<head>
+		<title>MSKCC AOC Project</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script type="text/javascript" src="dt.js"></script>
+	</head>
+
+    <!--Calls dt.init() function on event of loading this page-->
+	<body onLoad="dt.init();">
+
+        <h1 class = "header">MSKCC Melanoma Trial Selection Webapp</h1>
+
+		<div class = "buttonmenu">
+            <!--calls various functions in dt on click -->
+			<input type="button" class="button" id="edit" value="Edit" onClick="dt.edit();">
+			<input type="button" class="button" id="split" value="Split" onClick="dt.split();">
+			<input type="button" class="button" id="splitMulti" value="Split (multi-way)" onClick="dt.splitMulti();">
+			<input type="button" class="button" id="prune" value="Prune" onClick="dt.prune();">
+			<input type="button" class="button" id="reset" value="Reset" onClick="dt.reset(false);">
+			<input type="button" class="button" id="run" value="Run" onClick="dt.run();">
+		</div>
+
+		<div class = "mycanvas">
+			<canvas id="dt" width="1400" height="800" style="border: thin solid black;">
+			</canvas>
+		</div>
+
+        <textarea class = "mytextarea" id="data" cols="80" rows="5"></textarea>
+        <input type="button" class="button" id="import" value="Import" onClick="dt.importData(false);">
+
+        <div class = "footer">
+            <footer>
+                    Copyright &copy;Nathan Liu 2018
+            </footer>
+        </div>
+	</body>
+</html>
